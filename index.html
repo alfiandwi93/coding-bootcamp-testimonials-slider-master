@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Frontend Mentor | News homepage</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        display: none;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/pattern-quotes.svg" class="img-fluid position-fixed" alt="quote">
+    <img src="images/pattern-bg.svg" alt="background" class="position-fixed">
+    <img src="images/pattern-curve.svg" class="col-5 img-fluid position-fixed bottom-0 start-0" alt="background-curve">
+    <div class="swiper mySwiper container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="d-flex flex-column-reverse mt-4 mt-md-0">
+            <div class="col-lg-7 col-12 caption mt-5 mt-md-0 z-3 pe-0 pe-md-4">
+              <p>“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. ”</p>
+              <h6 class="mt-4">
+                <div class="d-md-inline d-block my-2 my-md-0"><b>Tanya Sinclair</b></div> 
+                <div class="d-md-inline d-block">UX Engineer</div>
+              </h6>
+            </div>
+            <div class="col-lg-6 col-12 d-flex justify-content-center justify-content-md-start pict mb-4 mb-md-0">
+              <img src="images/image-tanya.jpg" class="rounded-4" alt="photo">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="d-flex flex-column-reverse mt-4 mt-md-0">
+            <div class="col-lg-7 col-12 caption mt-5 mt-md-0 z-3 pe-0 pe-md-4">
+              <p>“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. ”</p>
+              <h6 class="mt-4">
+                <div class="d-md-inline d-block my-2 my-md-0"><b>John Tarkpor</b></div> 
+                <div class="d-md-inline d-block">Junior Front-end Developer</div>
+              </h6>
+            </div>
+            <div class="col-lg-6 col-12 d-flex justify-content-center justify-content-md-start pict mb-4 mb-md-0">
+              <img src="images/image-john.jpg" class="rounded-4" alt="photo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-nav row rounded-pill position-fixed p-1">
+      <div class="swiper-button-prev col-6 me-4 d-flex">
+        <img src="images/icon-prev.svg">
+      </div>
+      <div class="swiper-button-next col-6 ms-4 d-flex">
+        <img src="images/icon-next.svg">
+      </div>
+    </div>
+    <div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>. </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
